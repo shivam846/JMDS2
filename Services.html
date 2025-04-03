@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - College Consulting</title>
+    <link rel="stylesheet" href="services.css">
+    <script defer src="services.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Our Admission Services</h1>
+        <p>We provide admission consulting for various courses.</p>
+    </header>
+    
+    <section class="services">
+        <input type="text" id="search" placeholder="Search courses..." onkeyup="filterCourses()">
+        <div class="grid-container">
+            <div class="service" data-name="B.Ed">B.Ed</div>
+            <div class="service" data-name="D.El.Ed">D.El.Ed</div>
+            <div class="service" data-name="B.Tech">B.Tech/B.E. (Engineering)</div>
+            <div class="service" data-name="Polytechnic">Polytechnic</div>
+            <div class="service" data-name="M.B.A">M.B.A</div>
+            <div class="service" data-name="B.C.A">B.C.A</div>
+            <div class="service" data-name="BA.LLB">BA.LLB</div>
+            <div class="service" data-name="Dresser">Dresser</div>
+            <div class="service" data-name="ANM">ANM</div>
+            <div class="service" data-name="BAMS">BAMS</div>
+            <div class="service" data-name="B.Sc Biotech">B.Sc Biotech</div>
+            <div class="service" data-name="B.Sc Biomedical">B.Sc Biomedical</div>
+            <div class="service" data-name="B.Sc Nursing">B.Sc Nursing</div>
+            <div class="service" data-name="G.N.M">G.N.M</div>
+            <div class="service" data-name="B.Pharmacy">B.Pharmacy</div>
+            <div class="service" data-name="Hotel Management">Hotel Management</div>
+            <div class="service" data-name="B.Sc Agriculture">B.Sc Agriculture</div>
+            <div class="service" data-name="Bachelor of Mass Media">Bachelor of Mass Media</div>
+            <div class="service" data-name="Bachelor of Journalism">Bachelor of Journalism</div>
+            <div class="service" data-name="BFA (Fashion Design)">BFA (Fashion Design)</div>
+            <div class="service" data-name="All Other Courses">All Other Courses</div>
+        </div>
+    </section>
+
+    <!-- Universal Modal for Course Details -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2 id="course-title"></h2>
+            <p id="course-details"></p>
+            <button id="inquiry-btn">Inquiry Now</button>
+        </div>
+    </div>
+</body>
+</html>
